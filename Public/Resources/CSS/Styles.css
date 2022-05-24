@@ -1,0 +1,625 @@
+body {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.35) 100%), url("../Images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+::selection {
+    background: #98FAD4;
+}
+
+select {
+    /* styling */
+    background-color: white;
+    border: thin solid blue;
+    border-radius: 4px;
+    display: inline-block;
+    font-family: Arial, serif;
+    line-height: 1.5em;
+    padding: 0.5em 3.5em 0.5em 1em;
+
+    /* reset */
+
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+
+    background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+    background-size: 5px 5px,
+    5px 5px,
+    1px 1.5em;
+    background-repeat: no-repeat;
+}
+
+select:focus {
+    background-image: linear-gradient(45deg, #2EE59D 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, #2EE59D 50%),
+    linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    calc(100% - 2.5em) 0.5em;
+    background-size: 5px 5px,
+    5px 5px,
+    1px 1.5em;
+    background-repeat: no-repeat;
+    border-color: green;
+    outline: 0;
+}
+
+.font-cursive {
+    font-family: 'Pacifico', cursive;
+}
+
+.font-simple {
+    font-family: 'Domine', serif;
+}
+
+.error-text-color {
+    color: red;
+}
+
+.font-size-login-status {
+    font-size: 1.1rem;
+}
+
+.background-container {
+    /*background-color: #F8F8F8;*/
+    border-radius: 20px;
+    /*box-shadow: 0 4 px 8 px 0 rgba(0, 0, 0, 0.2), 0 6 px 20 px 0 rgba(0, 0, 0, 0.19);*/
+    text-align: center;
+    margin: 10% auto auto;
+    padding: 2.5rem;
+    font-size: 1.2rem;
+
+    background: linear-gradient(145deg, #dddddd, #f6f6f6);
+    box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+}
+
+.background-container-categories {
+    margin: 6% auto auto;
+    padding-top: 15px;
+}
+
+.background-container-products {
+    margin: 2.5% auto auto;
+    padding-top: 15px;
+}
+
+.heading-large {
+    font-size: 4.5rem;
+}
+
+.heading-small {
+    font-size: 2rem;
+}
+
+.input-area-padding {
+    padding-top: 30px;
+}
+
+.form-input-area {
+    width: 100%;
+    font-size: 1rem;
+    padding: 7px 10px;
+    border-radius: 10px;
+    border: none;
+    outline-color: #2EE59D;
+    color: #555;
+    box-shadow: inset 2px 2px 2px #cbced1, inset -8px -8px 8px #ffffff;
+    vertical-align: center;
+}
+
+.form-input-area-short {
+    width: 7rem;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-vertical-bottom {
+    vertical-align: bottom;
+}
+
+.align-vertical-center {
+    vertical-align: center;
+}
+
+.cell-padding-vertical {
+    padding-bottom: 10px;
+}
+
+.font-color-green {
+    color: rgba(25, 214, 143, 1) !important;
+}
+
+.table-area {
+    padding: 2rem;
+    background: linear-gradient(145deg, #dbdbdb, #f0f0f0);
+    box-shadow: inset 8px 8px 16px #c9c9c9,
+    inset -8px -8px 16px #e5e5e5;
+    border-radius: 20px;
+}
+
+.table-column-spacing {
+    margin-left: 1rem;
+}
+
+.table-cell-padding {
+    padding-left: 35px;
+}
+
+table.product-list {
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+
+table.product-list td {
+    padding: 15px 0;
+}
+
+.table-area-row {
+    padding: 2rem;
+    box-shadow: inset 8px 8px 16px #c9c9c9,
+    inset -8px -8px 16px #e5e5e5;
+    border-radius: 10px;
+    -moz-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    -webkit-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+}
+
+.table-row-highlight:hover {
+    box-shadow: inset 5px 5px 50px #f6f6f6,
+    inset -5px -5px 50px #98FAD4;
+    -moz-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    -webkit-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+}
+
+/* Button with hover effect -----------------------------------------------------------------*/
+.button-special {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.button-special-functional {
+    padding: 1.3em 1.3em;
+}
+
+.button-special-product-list {
+    padding: 1em 1em;
+}
+
+.button-special:hover {
+    background-color: #2EE59D;
+    box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.button-special-red:hover {
+    background-color: #FA4848;
+    box-shadow: 0 15px 20px rgba(250, 72, 72, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.button-special-gray:hover {
+    background-color: darkgray;
+    box-shadow: 0 15px 20px rgba(169, 169, 169, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.button-special-blue:hover {
+    background-color: #48d9fa;
+    box-shadow: 0 15px 20px rgba(72, 217, 250, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.button-special:active {
+    transform: translateY(-1px);
+}
+
+.log-out-button-positioning {
+    margin-left: 14px;
+    margin-top: 520px;
+}
+
+/* append to class list to remove hover effect, and make un-clickable */
+.noHoverEffect {
+    pointer-events: none;
+}
+
+/* hide un-style-able input button for files */
+input[type="file"] {
+    display: none;
+}
+
+/* Custom checkbox ----------------------------------------------------------------*/
+
+/* Customize the label (the container) */
+.checkmark-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: gray;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkmark-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #cfcfcf;
+    border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */
+.checkmark-container:hover input ~ .checkmark {
+    background-color: #bbb;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkmark-container input:checked ~ .checkmark {
+    background-color: #2EE59D;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkmark-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkmark-container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/* Side navigation menu ----------------------------------------------------------------------------*/
+.sidenav {
+    height: 100%;
+    width: 195px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: linear-gradient(-20deg, rgba(200, 200, 200, 0.2) 0%, rgba(230, 230, 230, 0.12) 100%);
+    backdrop-filter: blur(2px);
+    overflow-x: hidden;
+    padding-top: 2rem;
+    padding-right: 1rem;
+}
+
+.sidenav-item {
+    padding: 15px 8px 15px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav-heading {
+    padding: 6px 8px 15px 20px;
+    text-decoration: none;
+    font-size: 35px;
+    color: #000000;
+    display: block;
+}
+
+.sidenav-item:hover {
+    color: #2EE59D;
+}
+
+.sidenav-item-selected {
+    background: linear-gradient(90deg, rgba(46, 229, 157, 0.3) 0%, rgba(46, 229, 157, 0.2) 8%, rgba(0, 0, 0, 0) 95%);
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+/* Tree view ----------------------------------------------------------------------------*/
+
+/* Remove default bullets */
+ul, #TreeView {
+    list-style-type: none;
+}
+
+/* Remove margins and padding from the parent ul */
+#TreeView {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the caret/arrow */
+.arrow {
+    cursor: pointer;
+    user-select: none; /* Prevent text selection */
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+.arrow::before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+.arrow-down::before {
+    transform: rotate(90deg);
+}
+
+/* Hide the nested list */
+.nested {
+    display: none;
+}
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.active {
+    display: block;
+}
+
+.scrollable {
+    width: 400px;
+    height: 350px;
+    /*adds a scroll bar automatically when necessary, both vertical and horizontall*/
+    overflow: auto;
+    padding: 10px;
+}
+
+.selectable {
+    transition-duration: 100ms;
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+.selectable:hover {
+    transition-duration: 100ms;
+    font-size: 1.3rem;
+    color: #2EE59D;
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #AAA;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+/* Switch */
+.switch-container {
+    font-size: 15px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch-container input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider ------------------------------------------------------------------------------------------------- */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f1f1f1;
+    transition: .4s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 20px;
+    left: 0.27em;
+    bottom: 0.25em;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2EE59D;
+    border: 1px solid #2EE59D;
+}
+
+input:checked + .slider:before {
+    transform: translateX(1.4em);
+    background-color: #fff;
+}
+/* Multi select dropdown ---------------------------------------------------------------------------------------------*/
+
+.multi-selector{
+    font-family: sans-serif;
+    letter-spacing: 2.5px;
+    font-size: 12px;
+    width: 205px;
+    max-height: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.select-field:hover {
+    background-color: #2EE59D;
+    box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+}
+
+.select-field{
+    border-radius: 10px;
+    transition: 0.25s linear;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+.select-field,.multiselect-list-item,.multiselect-list{
+    border-radius: 10px;
+    width: 100%;
+    background-color: white;
+    padding: 0.3rem;
+}
+.multiselect{
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0 30px 60px rgb(0,0,0,0.2);
+    display: none;
+}
+.down-arrow{
+    font-size: 1.2rem;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.25s linear;
+}
+.multiselect-list-item{
+    display: block;
+    padding-left: 0;
+}
+.multiselect-list-item span{
+    float: right;
+    font-size: 0.6rem;
+    padding-top: 6px;
+}
+.multiselect-list-item:hover{
+    background: linear-gradient(90deg, rgba(46, 229, 157, 0.3) 0%, rgba(46, 229, 157, 0.2) 8%, rgba(0, 0, 0, 0) 95%);
+}
+.show{
+    display: block;
+}
+.rotate180{
+    transform: rotate(-180deg);
+}
+
+/* Input with inset label ------------------------------------------------------ */
+
+.full-input {
+    display: inline-block;
+    padding: 2px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent;
+}
+
+.full-input:focus-within {
+    border: 2px solid #2EE59D;
+}
+
+.inset-input {
+    outline: none;
+    border: none;
+    display:block;
+    line-height: 1.2em;
+    font-size: 14pt;
+}
+
+.inset-input-title {
+    width: 197px;
+}
+
+.inset-input-sku {
+    width: 207px;
+}
+
+.input-label {
+    display: block;
+    font-size: 12px;
+    padding: 2px;
+}
