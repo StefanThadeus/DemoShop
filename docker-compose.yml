@@ -1,0 +1,39 @@
+# Version of the standard used to write the YAML file
+version: '3.9'
+# List of containers to be built
+services:
+  mariadb:
+    image: mariadb:latest
+    restart: always
+    container_name: demoshop_mariadb
+    volumes:
+      - db_demoshop_app:/var/lib/mysql
+      - ./App/Config/Scripts/initDB.sql:/docker-entrypoint-initdb.d/01.sql
+    ports:
+      - "3309:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+    networks:
+      - demoshop_network
+
+  demoshop:
+    container_name: demoshop
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/App
+      - ./app.conf:/etc/apache2/sites-enabled/app.conf
+      - ./logs:/var/log/apache2
+      - ./xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+    networks:
+      - demoshop_network
+
+volumes:
+  db_demoshop_app:
+    name: db_demoshop_app
+
+networks:
+  demoshop_network:
